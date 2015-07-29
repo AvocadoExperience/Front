@@ -1,5 +1,5 @@
 # Front
-(Yet another) preconfigured frontend devstack - this time focusing on what's truly needed and helpful without all the useless stuff.
+(Yet another) preconfigured frontend devstack - this time focusing on what's truly needed and helpful without all the useless stuff. With template engine [Swig](http://paularmstrong.github.io/swig/).
 
 ## Requirements
 
