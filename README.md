@@ -25,5 +25,5 @@ Your HTML templates (with inheritance), JavaScript, and Less files under `src` w
 
 ## Copyright
 Copyright 2015 [Avocado Experience Ltd.](http://avocadoexperience.co)
-Under [the MIT licence](LICENCE.md).
+Under [the MIT license](LICENSE.md).
 Based on [Baby steps with gulp.js by Jair Trejo](http://jairtrejo.mx/blog/2014/11/baby-steps-with-gulp).
