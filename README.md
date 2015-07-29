@@ -10,7 +10,8 @@
 ## Quickstart
 
 ```
-cd NewProject
+git clone https://github.com/AvocadoExperience/Front.git
+cd Front
 npm install
 bower install
 ```
