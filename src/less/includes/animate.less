@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/*
+
+Animate.less
+Cross-browser LESS animation library for Bootstrap
+Licensed under the ☺ license (http://licence.visualidiot.com/)
+Documenation: https://github.com/machito/animate.less
+-------------------------------------------------------
+Copyright © 2012 Michael Castilla
+Email: yo@machito.co
+Twitter: https://twitter.com/micr0bitz
+
+*/
+
+@animationLessTime: .3s;
+@animationLessTimeLong: .6s;
+@animationLessLocation: './source';
+
+// required for all
+@import "@{animationLessLocation}/animated.less";
+
+// Remove "(reference)" to activate
+@import (reference) "@{animationLessLocation}/bounce.less";
+@import (reference) "@{animationLessLocation}/bounceIn.less";
+@import (reference) "@{animationLessLocation}/bounceInDown.less";
+@import (reference) "@{animationLessLocation}/bounceInLeft.less";
+@import (reference) "@{animationLessLocation}/bounceInRight.less";
+@import (reference) "@{animationLessLocation}/bounceInUp.less";
+@import (reference) "@{animationLessLocation}/bounceOut.less";
+@import (reference) "@{animationLessLocation}/bounceOutDown.less";
+@import (reference) "@{animationLessLocation}/bounceOutLeft.less";
+@import (reference) "@{animationLessLocation}/bounceOutRight.less";
+@import (reference) "@{animationLessLocation}/bounceOutUp.less";
+@import (reference) "@{animationLessLocation}/fadeIn.less";
+@import (reference) "@{animationLessLocation}/fadeInDown.less";
+@import (reference) "@{animationLessLocation}/fadeInDownBig.less";
+@import (reference) "@{animationLessLocation}/fadeInLeft.less";
+@import (reference) "@{animationLessLocation}/fadeInLeftBig.less";
+@import (reference) "@{animationLessLocation}/fadeInRight.less";
+@import (reference) "@{animationLessLocation}/fadeInRightBig.less";
+@import (reference) "@{animationLessLocation}/fadeInUp.less";
+@import (reference) "@{animationLessLocation}/fadeInUpBig.less";
+@import (reference) "@{animationLessLocation}/fadeOut.less";
+@import (reference) "@{animationLessLocation}/fadeOutDown.less";
+@import (reference) "@{animationLessLocation}/fadeOutDownBig.less";
+@import (reference) "@{animationLessLocation}/fadeOutLeft.less";
+@import (reference) "@{animationLessLocation}/fadeOutLeftBig.less";
+@import (reference) "@{animationLessLocation}/fadeOutRight.less";
+@import (reference) "@{animationLessLocation}/fadeOutRightBig.less";
+@import (reference) "@{animationLessLocation}/fadeOutUp.less";
+@import (reference) "@{animationLessLocation}/fadeOutUpBig.less";
+@import (reference) "@{animationLessLocation}/flash.less";
+@import (reference) "@{animationLessLocation}/flip.less";
+@import (reference) "@{animationLessLocation}/flipInX.less";
+@import (reference) "@{animationLessLocation}/flipInY.less";
+@import (reference) "@{animationLessLocation}/flipOutX.less";
+@import (reference) "@{animationLessLocation}/flipOutY.less";
+@import (reference) "@{animationLessLocation}/hinge.less";
+@import (reference) "@{animationLessLocation}/lightSpeedIn.less";
+@import (reference) "@{animationLessLocation}/lightSpeedOut.less";
+@import (reference) "@{animationLessLocation}/pulse.less";
+@import (reference) "@{animationLessLocation}/rollIn.less";
+@import (reference) "@{animationLessLocation}/rollOut.less";
+@import (reference) "@{animationLessLocation}/rotateIn.less";
+@import (reference) "@{animationLessLocation}/rotateInDownLeft.less";
+@import (reference) "@{animationLessLocation}/rotateInDownRight.less";
+@import (reference) "@{animationLessLocation}/rotateInUpLeft.less";
+@import (reference) "@{animationLessLocation}/rotateInUpRight.less";
+@import (reference) "@{animationLessLocation}/rotateOut.less";
+@import (reference) "@{animationLessLocation}/rotateOutDownLeft.less";
+@import (reference) "@{animationLessLocation}/rotateOutDownRight.less";
+@import (reference) "@{animationLessLocation}/rotateOutUpLeft.less";
+@import (reference) "@{animationLessLocation}/rotateOutUpRight.less";
+@import (reference) "@{animationLessLocation}/shake.less";
+@import (reference) "@{animationLessLocation}/swing.less";
+@import (reference) "@{animationLessLocation}/tada.less";
+@import (reference) "@{animationLessLocation}/wiggle.less";
+@import (reference) "@{animationLessLocation}/wobble.less";
+
+.animated {
+    -webkit-animation-duration: @animationLessTime;
+	   -moz-animation-duration: @animationLessTime;
+	     -o-animation-duration: @animationLessTime;
+	        animation-duration: @animationLessTime;
+}
+
+.animated.long {
+    -webkit-animation-duration: @animationLessTimeLong;
+	   -moz-animation-duration: @animationLessTimeLong;
+	     -o-animation-duration: @animationLessTimeLong;
+	        animation-duration: @animationLessTimeLong;
+}
