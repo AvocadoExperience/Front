@@ -1,6 +1,6 @@
 var gulp           = require("gulp"),
     gutil          = require('gulp-util'),
-    minifyHTML     = require("gulp-htmlmin"),
+    htmlmin        = require("gulp-htmlmin"),
     concat         = require("gulp-concat"),
     uglify         = require("gulp-uglify"),
     cssmin         = require("gulp-cssnano"),
@@ -68,6 +68,15 @@ gulp.task("html", function(){
             defaults: {
                 cache: false
             }
+        }))
+        .pipe(htmlmin({
+          collapseWhitespace: true,
+          removeComments: true,
+          removeAttributeQuotes: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          minifyJS: true,
+          minifyCSS: true
         }))
         .pipe(gulp.dest(paths.html.dest));
 });
