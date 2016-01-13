@@ -1,9 +1,9 @@
 var gulp           = require("gulp"),
     gutil          = require('gulp-util'),
-    minifyHTML     = require("gulp-minify-html"),
+    minifyHTML     = require("gulp-htmlmin"),
     concat         = require("gulp-concat"),
     uglify         = require("gulp-uglify"),
-    cssmin         = require("gulp-minify-css"),
+    cssmin         = require("gulp-cssnano"),
     prefixer       = require('gulp-autoprefixer'),
     imagemin       = require("gulp-imagemin"),
     sourcemaps     = require("gulp-sourcemaps"),
@@ -31,11 +31,11 @@ var paths = {
         dest: "build/css"
     },
     images: {
-        src: ["src/img/**/*.jpg", "src/img/**/*.jpeg", "src/img/**/*.png", "src/img/**/*.svg"],
+        src: ["src/img/**/*.jpg", "src/img/**/*.jpeg", "src/img/**/*.png", "src/img/**/*.svg", "src/img/**/*.gif"],
         dest: "build/img"
     },
     ico: {
-        src: ["src/*.png", "src/*.xml", "src/*.ico", "src/.htaccess"],
+        src: ["src/*.png", "src/*.svg", "src/*.xml", "src/*.ico", "src/.htaccess"],
         dest: "build"
     },
     less: {
@@ -47,7 +47,7 @@ var paths = {
         dest: "build/lib"
     },
     verbatim: {
-        src: ["src/manifest.json", "src/favicon.png"],
+        src: ["src/manifest.json"],
         dest: "build"
     }
 };
@@ -70,17 +70,6 @@ gulp.task("html", function(){
             }
         }))
         .pipe(gulp.dest(paths.html.dest));
-//                 .pipe(browserSync.stream());
-/*
-        .pipe(inject(
-            gulp.src(
-                mainBowerFiles(),
-                {read: false, cwd: "bower_components"}
-            ),
-            {name: "bower", addPrefix: "lib"}
-        ))
-*/
-//         .pipe(minifyHTML())
 });
 
 gulp.task("less", function(){
