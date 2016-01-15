@@ -3,7 +3,7 @@
 
 ## Requirements
 
-- [Node.js](http://nodes.org)
+- [Node.js](https://nodejs.org/)
 - [Gulp.js](http://gulpjs.com)
 - [Bower](http://bower.io)
 
