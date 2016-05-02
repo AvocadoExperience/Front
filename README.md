@@ -22,7 +22,7 @@ Then run the default `gulp` task:
 gulp
 ```
 
-Your HTML templates (with inheritance), JavaScript, and Less files under `app` will be processed, bower dependencies gathered, and the output will go to the `build` folder. A BrowserSync server will also be started.
+Your HTML templates (with inheritance), JavaScript, and Less files under `app` will be processed, bower dependencies gathered, and the output will go to the `dist` folder. A BrowserSync server will also be started.
 
 ## Copyright
 Copyright 2015 [Avocado Experience Ltd.](http://avocadoexperience.co)
