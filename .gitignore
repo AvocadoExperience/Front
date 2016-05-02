@@ -1,4 +1,6 @@
-bower_components/*
-node_modules/*
-build/*
-.DS_Store
+node_modules/
+npm-debug.log
+dist/
+.tmp/
+app/js/ignore/
+bower_components/

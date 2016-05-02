@@ -1,26 +1,13 @@
 {
-  "name": "NewProject",
+  "name": "Front",
   "version": "1.0.0",
   "authors": [
     "Martin Doubravsky <martin@avocadoexperience.co>"
   ],
-  "license": "MIT",
   "private": true,
   "dependencies": {
+    "jquery": "^2.2.1",
     "bootstrap": "~3.3.0",
     "animate.less": "*"
-  },
-  "overrides": {
-    "bootstrap": {
-      "main": [
-        "dist/fonts/**",
-        "dist/js/bootstrap.min.js"
-      ]
-    },
-    "jquery": {
-      "main": [
-        "dist/jquery.min.*"
-      ]
-    }
   }
 }

@@ -1,0 +1,82 @@
+@import "animate";
+
+$blue: #2979FF;
+$text-dark: #444;
+$text-light: #fff;
+$bezier: cubic-bezier(0.12, 0.91, 0.36, 1);
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'source-sans-pro','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $text-dark;
+  background-color: #fff;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,.h1 {
+  font-size: 31px;
+  font-weight: 400;
+  margin-bottom: .3em;
+}
+
+h2,.h2 {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.wf-loading {
+  h1,h2,h3,.logo,.time,time,dl,ol,ul {
+    visibility: hidden; 
+  }
+}
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+dl,dt,dd,ul {
+  margin: 0;
+  padding: 0;
+}
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+a {
+  color: $blue;
+  text-decoration: none;
+  transition: .3s color $bezier;
+  &:hover,&:focus {
+    color: darken($blue,20%);
+  }
+}
